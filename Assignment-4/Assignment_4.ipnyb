@@ -1,0 +1,136 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "3170e6f0",
+   "metadata": {},
+   "source": [
+    "## Assignment 5 of Cognitive computing"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7d89c082",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Question 1 creating numpy and operations\n",
+    "!pip install numpy\n",
+    "import numpy as np\n",
+    "array=np.array([1,2,3,4,5])\n",
+    "addition=array+2\n",
+    "multiplication=array*3\n",
+    "division=array/2\n",
+    "\n",
+    "print(array)\n",
+    "print(addition)\n",
+    "print(multiplication)\n",
+    "print(division)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "639b931a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Question 2 \n",
+    "#A Reversing numpy array\n",
+    "array=np.array([1,2,3,6,4,5])\n",
+    "reversed=array[::-1]#slicing start:stop:step\n",
+    "print(reversed)\n",
+    "#B Finding most occuring element and returning its frequency\n",
+    "x=np.array([1,2,3,4,5,1,2,1,1,1])\n",
+    "y=np.array([1, 1, 1, 2, 3, 4, 2, 4, 3, 3, ])\n",
+    "def max (ar):\n",
+    "    \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "50533c05",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Question 3\n",
+    "grid = np.array([[10, 20, 30], [40, 50, 60], [70, 80, 90]])\n",
+    "\n",
+    "first_pick = grid[0, 1]\n",
+    "second_pick = grid[2, 0]\n",
+    "\n",
+    "print(first_pick)\n",
+    "print(second_pick)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cc2e347a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Question 4\n",
+    "Dhairya_dnp = np.linspace(10, 100, 25)\n",
+    "\n",
+    "print(Dhairya_dnp.ndim)\n",
+    "print(Dhairya_dnp.shape)\n",
+    "print(Dhairya_dnp.size)\n",
+    "print(Dhairya_dnp.dtype)\n",
+    "print(Dhairya_dnp.nbytes)\n",
+    "\n",
+    "transposed_dnp = Dhairya_dnp.reshape(25, 1)\n",
+    "print(transposed_dnp)\n",
+    "\n",
+    "# No, T attribute doesn't work on 1-D arrays since they remain unchanged.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1445681c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Question 5\n",
+    "ucs420_Dhairya_dnp = np.array([[10, 20, 30, 40], [50, 60, 70, 80], [90, 15, 20, 35]])\n",
+    "\n",
+    "print(np.mean(ucs420_Dhairya_dnp))\n",
+    "print(np.median(ucs420_Dhairya_dnp))\n",
+    "print(np.max(ucs420_Dhairya_dnp))\n",
+    "print(np.min(ucs420_Dhairya_dnp))\n",
+    "print(np.unique(ucs420_Dhairya_dnp))\n",
+    "\n",
+    "reshaped_ucs420_Dhairya_dnp = ucs420_Dhairya_dnp.reshape(4, 3)\n",
+    "resized_ucs420_Dhairya_dnp = np.resize(ucs420_Dhairya_dnp, (2, 3))\n",
+    "\n",
+    "print(reshaped_ucs420_Dhairya_dnp)\n",
+    "print(resized_ucs420_Dhairya_dnp)\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
